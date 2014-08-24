@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STACK='streaming'
+STACK=${STACK-streaming}
 
 set -e
 
