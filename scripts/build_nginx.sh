@@ -40,6 +40,9 @@ echo "Downloading $headers_more_nginx_module_url"
 	cd nginx-${NGINX_VERSION}
 	./configure \
 		--with-pcre=pcre-${PCRE_VERSION} \
+		--with-http_secure_link_module \
+		--with-http_flv_module \
+		--with-http_mp4_module \
 		--prefix=/tmp/nginx \
 		--add-module=/${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION}
 	make install
