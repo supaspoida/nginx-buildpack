@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+STACK='cedar'
+
 set -e
 
 mkdir -p "$1/bin/"
